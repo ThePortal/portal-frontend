@@ -1,32 +1,45 @@
 <!doctype html>
-<html lang="en" ng-app="phonecatApp">
+<html lang="en" ng-app="portalApp">
 <head>
-  <meta charset="utf-8">
-  <title>Google Phone Gallery</title>
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/animations.css">
+    <meta charset="utf-8"> 
+    <title ng-bind="pageTitle">The Portal</title> 
+  
+    <meta property="og:title" content="the-portal" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846" />
+    <meta property="og:description" content="A Portal to the services you need: Everything you need to quickly get access to services in your neighbourhood.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="bower_components/jquery/jquery.js"></script>
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-animate/angular-animate.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="bower_components/angular-resource/angular-resource.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/animations.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/services.js"></script>
-</head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="app.css">
+    
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="app.js"></script>
+</head> 
+
 <body>
-
-  <div class="view-container">
-    <div ng-view class="view-frame"></div>
-  </div>
-
+    <div class="view-container">
+        <div ng-view class="view-frame"></div>
+    </div> 
 </body>
 
 <footer>
-    The Portal is built on  ... (c) 2014
+    <div class="footer-inner">
+        <p>
+            The Portal is based on
+            <a href="http://www.angularjs.org">AngularJS</a>,
+            <a href="http://getbootstrap.com">Bootstrap</a>, 
+            <a href="http://angular-ui.github.com/bootstrap">UI Bootstrap</a>,
+            and 
+            <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>. 
+            (c) 2014
+        </p>
+    </div>
 </footer>
 </html>
