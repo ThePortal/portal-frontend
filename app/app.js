@@ -1,21 +1,19 @@
-'use strict'
-
-angular.module('portalApp', [
-    'ui.bootstrap',
+var portalApp = angular.module('portalApp', [
+    'ngRoute',
     'portalApp.home'
-])
+]);
 
-.config(['$routeProvider',
+portalApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/home', {
-        templateUrl: 'home/home.tpl.html',
+        templateUrl: 'templates/home/home.tpl.html',
         controller: 'HomeCtrl'
       }).
       otherwise({
         redirectTo: '/home'
       });
-  }])
-  
+}])
 
 ;
+
